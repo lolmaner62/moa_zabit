@@ -1,0 +1,47 @@
+<!-- Hlavni web. stranka aplikace -->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinkacka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="strana" class="page_visible">
+        <div id="strana1" class="page_visible">
+            <div id="cile">
+                <h2>Kratkodobe Cile</h2>
+                <ul id="kratkodobe">
+            </div>
+            <div id="cile">
+                <h2>Stredni Cile</h2>
+                <ul id="stredni">
+            </div>
+            <div id="cile">
+                <h2>Dlouhodobe Cile</h2>
+                <ul id="dlouhodobe">
+            </div>
+        </div>
+        <div id="strana2" class="page">
+            <form>
+                <label for="nazev">Zadejte nazev</label>
+                <input type="text" name="nevim" id="nazev">
+                <label for="typ">Vyberte typ cile</label>
+                <select id="typ">
+                    <option value="Kratkodobe">Kratkodobe</option>
+                    <option value="Stredni">Stredni</option>
+                    <option value="Dlouhodobe">Dlouhodobe</option>
+                </select>
+                <input type="button" value="Přidat" name="Pridataa" class="pridani" onclick="Pridat()">
+                <input type="button" value="Odebrat" name="odstranit" class="odebrani" onclick="Odebrat()">
+
+            </form>
+        </div>
+        <button type="button" onclick="ZmenStranku1()">Cile</button>
+        <button type="button" onclick="ZmenStranku2()">Nastaveni</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
