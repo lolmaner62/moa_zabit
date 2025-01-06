@@ -70,7 +70,7 @@ function Obnovit() {
     stredni.forEach(name => {
         const listItem = document.createElement('li');
         listItem.textContent = name;
-        listContainer.appendChild(listItem);
+        listContainer2.appendChild(listItem);
     });
     const listContainer3 = document.getElementById('dlouhodobe');
     while (listContainer3.firstChild) {
@@ -79,7 +79,7 @@ function Obnovit() {
     Dlouhodobe.forEach(name => {
         const listItem = document.createElement('li');
         listItem.textContent = name;
-        listContainer.appendChild(listItem);
+        listContainer3.appendChild(listItem);
     });
 }
 function ZmenStranku1(){
