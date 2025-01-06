@@ -41,11 +41,11 @@ function Odebrat() {
             break;
         case "Stredni":
             const newArr1 = stredni.filter(item => item !== nazev);
-            stredni = newArr
+            stredni = newArr1
             break;
         case "Dlouhodobe":
             const newArr2 = Dlouhodobe.filter(item => item !== nazev);
-            Dlouhodobe = newArr
+            Dlouhodobe = newArr2
             break;
         default:
             break;
